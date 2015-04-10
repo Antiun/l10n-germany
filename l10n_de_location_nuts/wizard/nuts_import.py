@@ -31,23 +31,40 @@ logger = logging.getLogger(__name__)
 class NutsImport(models.TransientModel):
     _inherit = 'nuts.import'
     _de_state_map = {
-        'DE1': 'l10n_de_country_states.res_country_state_BW',  # BADEN-WÜRTTEMBERG
-        'DE2': 'l10n_de_country_states.res_country_state_BY',  # BAYERN
-        'DE3': 'l10n_de_country_states.res_country_state_BE',  # BERLIN
-        'DE4': 'l10n_de_country_states.res_country_state_BB',  # BRANDENBURG
-        'DE5': 'l10n_de_country_states.res_country_state_HB',  # BREMEN
-        'DE6': 'l10n_de_country_states.res_country_state_HH',  # HAMBURG
-        'DE7': 'l10n_de_country_states.res_country_state_HE',  # HESSEN
-        'DE8': 'l10n_de_country_states.res_country_state_MV',  # MECKLENBURG-VORPOMMERN
-        'DE9': 'l10n_de_country_states.res_country_state_NI',  # NIEDERSACHSEN
-        'DEA': 'l10n_de_country_states.res_country_state_NW',  # NORDRHEIN-WESTFALEN
-        'DEB': 'l10n_de_country_states.res_country_state_RP',  # RHEINLAND-PFALZ
-        'DEC': 'l10n_de_country_states.res_country_state_SL',  # SAARLAND
-        'DED': 'l10n_de_country_states.res_country_state_SN',  # SACHSEN
-        'DEE': 'l10n_de_country_states.res_country_state_ST',  # SACHSEN-ANHALT
-        'DEF': 'l10n_de_country_states.res_country_state_SH',  # SCHLESWIG-HOLSTEIN
-        'DEG': 'l10n_de_country_states.res_country_state_TH',  # THÜRINGEN
-        'DEZ': False,  # EXTRA-REGIO NUTS 1
+        # BADEN-WÜRTTEMBERG
+        'DE1': 'l10n_de_country_states.res_country_state_BW',
+        # BAYERN
+        'DE2': 'l10n_de_country_states.res_country_state_BY',
+        # BERLIN
+        'DE3': 'l10n_de_country_states.res_country_state_BE',
+        # BRANDENBURG
+        'DE4': 'l10n_de_country_states.res_country_state_BB',
+        # BREMEN
+        'DE5': 'l10n_de_country_states.res_country_state_HB',
+        # HAMBURG
+        'DE6': 'l10n_de_country_states.res_country_state_HH',
+        # HESSEN
+        'DE7': 'l10n_de_country_states.res_country_state_HE',
+        # MECKLENBURG-VORPOMMERN
+        'DE8': 'l10n_de_country_states.res_country_state_MV',
+        # NIEDERSACHSEN
+        'DE9': 'l10n_de_country_states.res_country_state_NI',
+        # NORDRHEIN-WESTFALEN
+        'DEA': 'l10n_de_country_states.res_country_state_NW',
+        # RHEINLAND-PFALZ
+        'DEB': 'l10n_de_country_states.res_country_state_RP',
+        # SAARLAND
+        'DEC': 'l10n_de_country_states.res_country_state_SL',
+        # SACHSEN
+        'DED': 'l10n_de_country_states.res_country_state_SN',
+        # SACHSEN-ANHALT
+        'DEE': 'l10n_de_country_states.res_country_state_ST',
+        # SCHLESWIG-HOLSTEIN
+        'DEF': 'l10n_de_country_states.res_country_state_SH',
+        # THÜRINGEN
+        'DEG': 'l10n_de_country_states.res_country_state_TH',
+        # EXTRA-REGIO NUTS 1
+        'DEZ': False,
     }
 
     @api.model
